@@ -5,8 +5,18 @@ Machine learning models can be useful tools in predicting stock prices of a give
 <br />
 First, let us look at all Closing values of the IBM Stock price from 1999-11-01 to 2021-03-04: <br /> <br />
 <img src="Model Results/IBM Closing Stock Price.png"> <br /> <br />
-The results predicted by each model vs the actual test values are as given below: <br />
+Now, let us compare the results predicted by each model vs the actual test values from 2016-09-02 to 2021-03-04: <br />
 <br />
-## Long Short-Term Memory (LSTM) <br />
-## Linear Regression <br />
-## Auto Regressive Integrated Moving Average (ARIMA)
+## Long Short-Term Memory (LSTM) <br /> <br />
+<img src="Model Results/LSTM/LSTM test result.png"> <br /> <br />
+<img src="Model Results/LSTM/LSTM test+train result.png"> <br /> <br />
+RMSE: 1.06 <br /> <br />
+## Linear Regression <br /> <br />
+<img src="Model Results/Linear Regression/LR test result.png"> <br /> <br />
+<img src="Model Results/Linear Regression/LR train result.png"> <br /> <br />
+RMSE: 51.80 <br /> <br />
+## Auto Regressive Integrated Moving Average (ARIMA) <br /> <br />
+<img src="Model Results/ARIMA/ARIMA test result.png"> <br /> <br />
+<img src="Model Results/ARIMA/ARIMA test+train result.png"> <br /> <br />
+RMSE: 0.05 <br /> <br />
+Thus, we see the ARIMA model performs best (with RMSE = 0.05), followed by LSTM (with RMSE = 1), and Linear Regression performs worst (with RMSE = 51).
